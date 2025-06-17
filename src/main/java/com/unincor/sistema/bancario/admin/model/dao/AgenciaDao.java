@@ -97,7 +97,7 @@ public class AgenciaDao {
         
         // Teste de inserÃ§Ã£o
         System.out.println("Teste de inserir agencia: ");
-        Agencia agencia = new Agencia(null, "1645", "TrÃŠs CoraÃ§Ãµes","MG", "Avenida do PelÃ©", "521", "3740000");
+        Agencia agencia = new Agencia(null, "1645", "Tres Coracoes","MG", "Avenida do Pele", "521", "3740000");
         agenciaDao.inserirAgencia(agencia);
 
         // teste loop buscar todas agencias
