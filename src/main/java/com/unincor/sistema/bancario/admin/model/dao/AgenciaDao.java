@@ -95,12 +95,10 @@ public class AgenciaDao {
     public static void main(String[] args) {
         AgenciaDao agenciaDao = new AgenciaDao();
         
-        // Teste de inserÃ§Ã£o
         System.out.println("Teste de inserir agencia: ");
         Agencia agencia = new Agencia(null, "1645", "Tres Coracoes","MG", "Avenida do Pele", "521", "3740000");
         agenciaDao.inserirAgencia(agencia);
 
-        // teste loop buscar todas agencias
         System.out.println("Teste loop buscar todas agencias");
         List<Agencia> agencias = agenciaDao.listarTodasAgencias();
         agencias.forEach(ag -> System.out.println("Codigo: " + ag.getCodigoAgencia()));
